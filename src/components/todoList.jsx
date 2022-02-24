@@ -1,5 +1,7 @@
 import "./todo.css";
 
+// Todo list component
+
 export const TodoList = ({ id, title, task, filterData }) => {
   return (
     <div className="todoItem">
