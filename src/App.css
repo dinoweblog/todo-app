@@ -1,7 +1,22 @@
 .App {
-  text-align: center;
-}
+  color: black;
+  width: 40%;
+  height: 40%;
+  background-color: white;
 
+  margin: auto;
+  margin-top: 10%;
+  padding: 20px;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+.App > h1 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
