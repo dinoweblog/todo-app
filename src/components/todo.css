@@ -1,0 +1,90 @@
+h2 {
+  margin: 0;
+  padding: 0;
+}
+.input-box-div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.todo-list-div {
+  height: 100px;
+}
+
+.task {
+  width: 60%;
+}
+.title {
+  width: 25%;
+}
+.todoItem {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.todoItem > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.todoItem button {
+  border: 1px solid red;
+  color: red;
+  padding: 7px 13px;
+  background-color: transparent;
+}
+.title-text {
+  width: 27%;
+  margin-right: 20px;
+  padding: 5px 0 5px 5px;
+  border-bottom: 1px solid #ffd32d;
+  border-right: 2px solid #ffd32d;
+}
+
+.title-text ~ div {
+  width: 64%;
+  margin-right: 20px;
+  border-bottom: 1px solid #ffd32d;
+  border-right: 2px solid #ffd32d;
+  padding: 5px 0 5px 5px;
+}
+
+input {
+  height: 30px;
+  padding-left: 10px;
+  margin-right: 20px;
+  border: 1px solid gray;
+  outline: #ffd32d;
+}
+
+.add {
+  padding: 10px 22px;
+  background-color: #ffd32d;
+}
+
+.prev {
+  margin-right: 20px;
+}
+
+.prev,
+.next {
+  padding: 10px 22px;
+  margin-top: 40px;
+  background-color: #d1d1d1;
+  transition: 0.9ms;
+}
+
+.prev:hover,
+.next:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.load-gif {
+  width: 20%;
+  margin: auto;
+}
+
+.load-gif img {
+  width: 100%;
+}

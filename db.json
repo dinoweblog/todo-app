@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "status": false,
+      "title": "Drink",
+      "task": "Tea",
+      "id": 1
+    },
+    {
+      "status": false,
+      "title": "Play",
+      "task": "Cricket",
+      "id": 2
+    },
+    {
+      "status": false,
+      "title": "Play",
+      "task": "Football",
+      "id": 3
+    },
+    {
+      "status": false,
+      "title": "Code",
+      "task": "Project",
+      "id": 4
+    },
+    {
+      "status": false,
+      "title": "Drink",
+      "task": "Coca",
+      "id": 5
+    }
+  ]
+}
