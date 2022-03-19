@@ -10,8 +10,7 @@ export const Todo = () => {
   const [todos, setTodos] = useState([]);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
-  const [timerTime, setTimerTime] = useState(2000);
-  let timer;
+
   const limit = 2;
 
   useEffect(() => {
@@ -28,17 +27,14 @@ export const Todo = () => {
   };
 
   const getData = () => {
-    clearTimeout(timer);
-
-    timer = setTimeout(() => {
-      fetch(`http://localhost:3000/todos?_page=${page}&_limit=${limit}`)
-        .then((d) => d.json())
-        .then((res) => {
-          setTodos(res);
-          setLoading(false);
-        });
-    }, timerTime);
-    setTimerTime(0);
+    fetch(
+      `https://employees-dino-app.herokuapp.com/todos?_page=${page}&_limit=${limit}`
+    )
+      .then((d) => d.json())
+      .then((res) => {
+        setTodos(res);
+        setLoading(false);
+      });
   };
 
   return loading ? (
@@ -64,7 +60,7 @@ export const Todo = () => {
           className="add"
           onClick={() => {
             const data = { status: false, title: title, task: task };
-            fetch("http://localhost:3000/todos", {
+            fetch("https://employees-dino-app.herokuapp.com/todos", {
               method: "POST",
               body: JSON.stringify(data),
               headers: {
